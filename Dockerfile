@@ -1,5 +1,5 @@
 FROM node:12-alpine as builder
-LABEL MAINTAINER="Michael Hobl <michael+docker@hobl.com.au>"
+LABEL MAINTAINER="Michael Hobl <mhobl@vostronet.com>"
 
 RUN apk update && \
     apk add --no-cache \
