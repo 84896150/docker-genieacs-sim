@@ -1,0 +1,12 @@
+version: '3'
+services:
+    sim:
+        #image: mxhob1/genieacs-sim
+        build: .
+        volumes:
+            - 'var_log:/var/log'
+        environment:
+            - 'ACS_URL=http://genieacs.vostro.live:7547'
+volumes:
+    var_log:
+        driver: local
