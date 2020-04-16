@@ -1,8 +1,7 @@
 version: '3'
 services:
     sim:
-        #image: mxhob1/genieacs-sim
-        build: .
+        image: mxhob1/genieacs-sim
         volumes:
             - 'var_log:/var/log'
         environment:
