@@ -28,5 +28,5 @@ USER genieacs-sim
 
 ENV ACS_URL="http://127.0.0.1:7547"
 
-ENTRYPOINT [ "sh", "-c", "/opt/genieacs-sim/genieacs-sim -u $ACS_URL"]
+ENTRYPOINT [ "sh", "-c", "/opt/genieacs-sim/genieacs-sim -u $ACS_URL -s $RANDOM"]
 VOLUME ["/var/log"]
