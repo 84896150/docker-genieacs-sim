@@ -27,6 +27,7 @@ RUN addgroup -S genieacs-sim && adduser -S genieacs-sim -G genieacs-sim \
 USER genieacs-sim
 
 ENV ACS_URL="http://127.0.0.1:7547"
+ENV PROCESSES=1
 
-ENTRYPOINT [ "sh", "-c", "/opt/genieacs-sim/genieacs-sim -u $ACS_URL -s $RANDOM"]
+ENTRYPOINT [ "sh", "-c", "/opt/genieacs-sim/genieacs-sim -u $ACS_URL -p $PROCESSES -s $RANDOM"]
 VOLUME ["/var/log"]
